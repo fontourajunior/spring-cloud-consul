@@ -1,0 +1,19 @@
+version: "3"
+services:
+
+  consul:
+    image: consul
+    container_name: consul
+    ports:
+      - "8500:8500"
+    volumes:
+      - ./config:/consul/config
+
+  git2consul:
+    image: cimpress/git2consul
+    depends_on:
+      - consul
+    container_name: git2consul
+    volumes:
+      - .:/config
+    command: --endpoint consul --config-file /config/git2consul.json

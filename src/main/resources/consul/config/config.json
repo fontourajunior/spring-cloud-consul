@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "id": "poc-circuitbreaker",
+      "name": "poc-circuitbreaker",
+      "tags": ["poc-circuitbreaker"],
+      "port": 8080
+    }
+  ]
+}

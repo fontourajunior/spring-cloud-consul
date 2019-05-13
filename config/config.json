@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "id": "test-consul-application",
+      "name": "test-consul-application",
+      "tags": ["test-consul-application"],
+      "port": 8080
+    }
+  ]
+}
